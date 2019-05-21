@@ -1,6 +1,6 @@
 FROM google/cloud-sdk:alpine
 
-RUN apk add --no-cache gcc python-dev musl-dev libffi-dev openssl-dev
+RUN apk add --no-cache gcc libffi-dev make musl-dev openssl-dev python-dev
 
 RUN echo Y | gcloud components install app-engine-python app-engine-python-extras
 RUN wget https://bootstrap.pypa.io/get-pip.py \
