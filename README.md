@@ -7,4 +7,4 @@ Docker image with Python2.7 and test tools for CI systems
 - pytest: 4.5.0
 - pytest-cov: 2.7.1
 - make: 4.2.1
-- google cloud SDK (app-engine-python, app-engine-python-extras)
+- google cloud SDK (app-engine-python, beta)
