@@ -3,6 +3,7 @@ FROM python:2.7-alpine
 CMD ["/bin/sh"]
 
 RUN apk add --no-cache \
+    build-base \
     gcc \
     libffi-dev \
     make \
@@ -12,6 +13,7 @@ RUN apk add --no-cache \
 
 RUN pip install --no-cache-dir \
     flake8 \
+    grpcio==1.8.2 \
     isort \
     mock \
     pytest \
